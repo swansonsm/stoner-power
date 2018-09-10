@@ -1,0 +1,92 @@
+#mainNav {
+  -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+  -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+  transition: padding-top 0.3s, padding-bottom 0.3s, background-color 0.3s ease-in-out;
+  background-color: transparent;
+  text-transform: uppercase;
+  .navbar-brand {
+    color: fade-out($white, .5);
+    font-weight: 700;
+    padding: .9rem 0;
+  }
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: fade-out($white, .5);
+    border: 1px solid $white;
+    &:focus {
+      outline: none;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      &:hover {
+        color: fade(white, 80%);
+        outline: none;
+        background-color: transparent;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+  &.navbar-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: $white;
+    .navbar-brand {
+      color: $primary;
+    }
+    .navbar-toggler {
+      font-size: 80%;
+      padding: 0.75rem;
+      color: $black;
+      border: 1px solid $black;
+      &:focus {
+        outline: none;
+      }
+    }
+    .nav-link {
+      color: $black;
+      padding: 1.5rem 1.5rem 1.25rem;
+      border-bottom: 0.2rem solid transparent;
+      &:hover {
+        color: $primary;
+      }
+      &:active {
+        color: darken($primary, 15%);
+      }
+      &.active {
+        color: $primary;
+        outline: none;
+        border-bottom: 0.2rem solid $primary;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s, background-color 0.3s ease-in-out;
+    border-bottom: none;
+    background-color: transparent;
+    .navbar-brand {
+      padding: .5rem 0;
+      color: fade-out($white, .5);
+    }
+    .nav-link {
+      transition: none;
+      padding: 2rem 1.5rem;
+      color: fade-out($white, .5);
+      &:hover {
+        color: fade-out($white, .25);
+      }
+      &:active {
+        color: white;
+      }
+    }
+  }
+}

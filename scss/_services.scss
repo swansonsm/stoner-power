@@ -1,0 +1,27 @@
+.services-section {
+  margin: 4rem 0;
+  padding: 4rem 0;
+  .description {
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+  .featured-text {
+    padding: 2rem;
+    @media (min-width: 992px) {
+      padding: 0 0 0 2rem;
+      border-left: 0.5rem solid $primary;
+    }
+  }
+  .services-text {
+    text-align: center;
+    padding: 1rem;
+    font-size: 90%;
+    .divider {
+      color: $primary;
+    }
+    hr {
+      border-color: $primary;
+      border-width: .15rem;
+      width: 35%;
+    }
+  }
+}
