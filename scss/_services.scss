@@ -1,6 +1,6 @@
 .services-section {
-  margin: 4rem 0;
-  padding: 4rem 0;
+  margin: 2rem 0;
+  padding: 2rem 0;
   .description {
     color: rgba(0, 0, 0, 0.6) !important;
   }
@@ -23,5 +23,9 @@
       border-width: .15rem;
       width: 35%;
     }
+  }
+  @media(min-width: 500px) {
+    margin: 4rem 0;
+    padding: 4rem 0;
   }
 }

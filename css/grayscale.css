@@ -14,11 +14,12 @@
 #mainNav .navbar-brand {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
+  font-size: 0.75rem;
   padding: .9rem 0;
 }
 
 #mainNav .navbar-toggler {
-  font-size: 80%;
+  font-size: 50%;
   padding: 0.75rem;
   color: rgba(255, 255, 255, 0.5);
   border: 1px solid #fff;
@@ -26,6 +27,10 @@
 
 #mainNav .navbar-toggler:focus {
   outline: none;
+}
+
+#mainNav .navbar-nav .nav-item {
+  font-size: 0.75rem;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -50,7 +55,7 @@
 }
 
 #mainNav.navbar-shrink .navbar-toggler {
-  font-size: 80%;
+  font-size: 50%;
   padding: 0.75rem;
   color: #161616;
   border: 1px solid #161616;
@@ -80,6 +85,15 @@
   border-bottom: 0.2rem solid #64a19d;
 }
 
+@media (min-width: 768px) {
+  #mainNav .navbar-brand {
+    font-size: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 10px;
@@ -93,6 +107,7 @@
   #mainNav .navbar-brand {
     padding: .5rem 0;
     color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
   }
   #mainNav .nav-link {
     transition: none;
@@ -122,17 +137,19 @@
 
 .masthead h1 {
   font-family: 'Varela Round';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   letter-spacing: 0.8rem;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-.masthead h2 {
-  max-width: 20rem;
-  font-size: 1rem;
+@media (min-width: 500px) {
+  .masthead h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -186,8 +203,8 @@
 }
 
 .about-section {
-  margin: 4rem 0;
-  padding: 4rem 0;
+  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 .about-section .bio {
@@ -215,6 +232,13 @@
   padding: 10px 0px;
 }
 
+@media (min-width: 500px) {
+  .about-section {
+    margin: 4rem 0;
+    padding: 4rem 0;
+  }
+}
+
 @media (min-width: 768px) {
   .about-section hr {
     display: block;
@@ -222,8 +246,8 @@
 }
 
 .services-section {
-  margin: 4rem 0;
-  padding: 4rem 0;
+  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 .services-section .description {
@@ -257,10 +281,17 @@
   width: 35%;
 }
 
+@media (min-width: 500px) {
+  .services-section {
+    margin: 4rem 0;
+    padding: 4rem 0;
+  }
+}
+
 .contact-section {
-  margin: 4rem 0;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  margin: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .contact-section .card {
@@ -282,6 +313,14 @@
 
 .contact-section .card .text-black-50 {
   font-size: 1rem;
+}
+
+@media (min-width: 500px) {
+  .contact-section {
+    margin: 4rem 0;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (min-width: 992px) {

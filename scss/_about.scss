@@ -1,6 +1,6 @@
 .about-section {
-  margin: 4rem 0;
-  padding: 4rem 0;
+  margin: 2rem 0;
+  padding: 2rem 0;
   .bio {
     padding: 2rem 0;
     img {
@@ -21,6 +21,10 @@
     border-width: .2rem;
     width: 75%;
     padding: 10px 0px;
+  }
+  @media(min-width: 500px) {
+    margin: 4rem 0;
+    padding: 4rem 0;
   }
   @media (min-width: 768px) {
     hr {
