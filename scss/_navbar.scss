@@ -19,6 +19,22 @@
       outline: none;
     }
   }
+  .nav-link {
+    color: fade-out($white, .5);
+    padding: 1rem 1rem 1rem;
+    border-bottom: 0.2rem solid transparent;
+    &:hover {
+      color: $white;
+    }
+    &:active {
+      color: darken($primary, 15%);
+    }
+    &.active {
+      color: $primary;
+      outline: none;
+      border-bottom: 0.2rem solid $primary;
+    }
+  }
   .navbar-nav {
     .nav-item {
       font-size: 0.75rem;
@@ -52,7 +68,7 @@
     }
     .nav-link {
       color: $black;
-      padding: 1.5rem 1.5rem 1.25rem;
+      padding: 1rem 1rem 1rem;
       border-bottom: 0.2rem solid transparent;
       &:hover {
         color: $primary;

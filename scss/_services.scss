@@ -1,21 +1,19 @@
 .services-section {
   margin: 2rem 0;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   .description {
     color: rgba(0, 0, 0, 0.6) !important;
-  }
-  .featured-text {
-    padding: 2rem;
-    @media (min-width: 992px) {
-      padding: 0 0 0 2rem;
-      border-left: 0.5rem solid $primary;
-    }
   }
   .services-text {
     text-align: center;
     padding: 1rem;
     font-size: 90%;
     .divider {
+      color: $primary;
+    }
+    i {
+      font-size: 3rem;
+      padding-bottom: 2rem;
       color: $primary;
     }
     hr {
@@ -26,6 +24,6 @@
   }
   @media(min-width: 500px) {
     margin: 4rem 0;
-    padding: 4rem 0;
+    padding: 4rem 2rem;
   }
 }
